@@ -23,10 +23,18 @@
 
 int main(void)
 {
-    puts("Hello World!");
+	int i = 0, j = 0;
+	puts("Hello World!");
 
     printf("You are running RIOT on a(n) %s board.\n", RIOT_BOARD);
     printf("This board features a(n) %s MCU.\n", RIOT_MCU);
+	while(1){
+        i++;
+        puts("ih\n");
+		for (j = 0; j < 10000; j++);
+        if(i==100)
+            i = 0;
+    }
 
     return 0;
 }
