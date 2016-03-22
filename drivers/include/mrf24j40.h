@@ -65,7 +65,7 @@ extern "C" {
 /**
  * @brief   Device descriptor for MRF24J40 radio devices
  */
-typedef struct {
+typedef struct mrf24j40_parameters {
     /* netdev fields */
     const gnrc_netdev_driver_t *driver; /**< pointer to the devices interface */
     gnrc_netdev_event_cb_t event_cb;    /**< netdev event callback */
@@ -82,8 +82,8 @@ typedef struct {
     uint8_t frame_len;                  /**< length of the current TX frame */
     uint16_t pan;                       /**< currently used PAN ID */
     uint8_t chan;                       /**< currently used channel */
-    uint8_t addr_short[2];              /**< the radio's short address */
-    uint8_t addr_long[8];               /**< the radio's long address */
+    uint8_t short_addr[2];              /**< the radio's short address */   //gw ubah nama variabelnya. awalnya addr_short
+    uint8_t long_addr[8];               /**< the radio's long address */    //gw ubah nama variabelnya. awalnya addr_long
     uint16_t options;                   /**< state of used options */
     uint8_t idle_state;                 /**< state to return to after sending */
 } mrf24j40_t;
