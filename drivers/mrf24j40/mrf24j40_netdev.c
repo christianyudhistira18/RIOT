@@ -27,9 +27,9 @@
 #include "net/netdev2_ieee802154.h"
 
 #include "mrf24j40.h"
-#include "mrf24j40_netdev.h"
-#include "mrf24j40_internal.h"
-#include "mrf24j40_registers.h"
+#include "include/mrf24j40_netdev.h"
+#include "include/mrf24j40_internal.h"
+#include "include/mrf24j40_registers.h"
 
 #define ENABLE_DEBUG (0)
 #include "debug.h"

@@ -164,3 +164,5 @@ extern "C" {
 
 #define MRF24J40_RESET_DELAY 						(192u)
 #define MRF24J40_REG_TXMCR_CSMA_BACKOFF_MASK         (0x1F)
+
+#endif //end of MRF24J40_REGISTERS_H_

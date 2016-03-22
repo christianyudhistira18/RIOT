@@ -32,7 +32,7 @@ int main(void)
 {
     gnrc_netreg_entry_t dump;
 
-    puts("AT86RF2xx device driver test");
+    puts("MRF24J40 device driver test");
 
     /* register the pktdump thread */
     puts("Register the packet dump thread for GNRC_NETTYPE_UNDEF packets");

@@ -19,8 +19,8 @@
  */
 
 #include "mrf24j40.h"
-#include "mrf24j40_internal.h"
-#include "mrf24j40_registers.h"
+#include "include/mrf24j40_internal.h"
+#include "include/mrf24j40_registers.h"
 #include "periph/spi.h"
 
 #define ENABLE_DEBUG (0)

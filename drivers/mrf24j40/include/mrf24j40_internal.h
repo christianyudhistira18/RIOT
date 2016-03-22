@@ -58,3 +58,10 @@ uint8_t mrf24j40_reg_read_long(const mrf24j40_t *dev, const uint16_t addr);
  */
  
 void mrf24j40_reg_write_short_long(const mrf24j40_t *dev, const uint16_t addr, const uint8_t value);
+
+/**
+TODO: description
+*/
+void mrf24j40_reg_write_long(const mrf24j40_t *dev, const uint16_t addr, const uint8_t value);
+
+#endif //end of MRF24J40_INTERNAL_H_

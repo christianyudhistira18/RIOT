@@ -1,4 +1,4 @@
-APPLICATION = driver_at86rf2xx
+APPLICATION = driver_mrf24j40
 include ../Makefile.tests_common
 
 FEATURES_REQUIRED = periph_spi periph_gpio

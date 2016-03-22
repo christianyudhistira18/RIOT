@@ -13,19 +13,19 @@
  * @file
  * @brief       Implementation of public functions for MRF24J40 drivers
  *
- * @author      Bernhard Nägele <bernhard@naegele-privat.de>
+ * @author      Adika Bintang Sulaeman <adikabintang@yahoo.com>
  *
  * @}
  */
 
-//#include "periph/cpuid.h"
-//#include "byteorder.h"
-//#include "net/ieee802154.h"
-//#include "net/gnrc.h"
+#include "periph/cpuid.h"
+#include "byteorder.h"
+#include "net/ieee802154.h"
+#include "net/gnrc.h"
+#include "include/mrf24j40_registers.h"
+#include "include/mrf24j40_internal.h"
+#include "include/mrf24j40_netdev.h"
 #include "mrf24j40.h"
-#include "mrf24j40_registers.h"
-#include "mrf24j40_internal.h"
-// #include "mrf24j40_netdev.h"
 
 #define ENABLE_DEBUG (0)
 #include "debug.h"
@@ -165,7 +165,7 @@ void mrf24j40_reset(mrf24j40_t *dev)
 //    eui64_t addr_long;
 //#endif
 
-    mrf24j40_hardware_reset(dev);
+    //mrf24j40_hardware_reset(dev); //cannot find it anywhere, I decided to write it down
 
     /* Here starts init-process as described on MRF24J40 Manual Chap. 3.2 */
     mrf24j40_reg_write_short(dev, MRF24J40_REG_PACON2, 0x98);

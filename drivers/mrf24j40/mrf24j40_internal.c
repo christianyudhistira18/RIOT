@@ -11,8 +11,8 @@
  */
 #include "periph/spi.h"
 #include "periph/gpio.h"
-#include "mrf24j40_internal.h"
-#include "mrf24j40_registers.h"
+#include "include/mrf24j40_internal.h"
+#include "include/mrf24j40_registers.h"
 #include "xtimer.h"
 
 void mrf24j40_reg_write_short(const mrf24j40_t *dev, const uint8_t addr, const uint8_t value)
